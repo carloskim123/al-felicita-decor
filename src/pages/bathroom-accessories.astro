@@ -1,0 +1,37 @@
+---
+import Layout from "../layouts/Layout.astro";
+const bathroomAccessories = [
+  { id: 1, imageUrl: 'https://images.pexels.com/photos/10913620/pexels-photo-10913620.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load', alt: 'Bathroom Accessory 1' },
+  { id: 2, imageUrl: 'https://images.pexels.com/photos/10913620/pexels-photo-10913620.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load', alt: 'Bathroom Accessory 2' },
+  { id: 3, imageUrl: 'https://images.pexels.com/photos/12607180/pexels-photo-12607180.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load', alt: 'Bathroom Accessory 3' },
+  { id: 4, imageUrl: 'https://images.pexels.com/photos/10913620/pexels-photo-10913620.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load', alt: 'Bathroom Accessory 1' },
+  { id: 5, imageUrl: 'https://images.pexels.com/photos/10913620/pexels-photo-10913620.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load', alt: 'Bathroom Accessory 1' },
+  { id: 6, imageUrl: 'https://images.pexels.com/photos/10913620/pexels-photo-10913620.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load', alt: 'Bathroom Accessory 1' },
+  { id: 7, imageUrl: 'https://images.pexels.com/photos/10913620/pexels-photo-10913620.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load', alt: 'Bathroom Accessory 1' },
+  { id: 8, imageUrl: 'https://images.pexels.com/photos/10913620/pexels-photo-10913620.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load', alt: 'Bathroom Accessory 1' },
+  { id: 9, imageUrl: 'https://images.pexels.com/photos/10913620/pexels-photo-10913620.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load', alt: 'Bathroom Accessory 1' },
+  { id: 10, imageUrl: 'https://images.pexels.com/photos/10913620/pexels-photo-10913620.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load', alt: 'Bathroom Accessory 1' },
+
+];
+---
+
+<Layout
+  description="Explore our wide range of bathroom accessories."
+  title="Bathroom Accessories · Home"
+>
+  <div class="mx-auto max-w-10xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+    <div>
+      <h1 class="text-6xl font-bold mb-8">Bathroom Accessories</h1>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
+      {bathroomAccessories.map(accessory => (
+        <div class="bg-gray-200 rounded-lg overflow-hidden shadow-md">
+          <img src={accessory.imageUrl} alt={accessory.alt} class="object-cover w-full h-96 sm:h-120 md:h-150 lg:h-200 xl:h-250">
+          <div class="p-4">
+            <p class="text-sm">{accessory.alt}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</Layout>

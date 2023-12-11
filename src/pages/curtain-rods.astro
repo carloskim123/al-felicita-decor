@@ -1,0 +1,92 @@
+---
+import Layout from '../layouts/Layout.astro';
+const curtainRods = [
+  {
+    id: 1,
+    imageUrl:
+      'https://images.pexels.com/photos/10913620/pexels-photo-10913620.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+    alt: 'Curtain Rod 1',
+  },
+  {
+    id: 2,
+    imageUrl:
+      'https://images.pexels.com/photos/10913620/pexels-photo-10913620.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+    alt: 'Curtain Rod 2',
+  },
+  {
+    id: 3,
+    imageUrl:
+      'https://images.pexels.com/photos/12607180/pexels-photo-12607180.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+    alt: 'Curtain Rod 3',
+  },
+  {
+    id: 4,
+    imageUrl:
+      'https://images.pexels.com/photos/10913620/pexels-photo-10913620.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+    alt: 'Curtain Rod 1',
+  },
+  {
+    id: 5,
+    imageUrl:
+      'https://images.pexels.com/photos/10913620/pexels-photo-10913620.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+    alt: 'Curtain Rod 1',
+  },
+  {
+    id: 6,
+    imageUrl:
+      'https://images.pexels.com/photos/10913620/pexels-photo-10913620.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+    alt: 'Curtain Rod 1',
+  },
+  {
+    id: 7,
+    imageUrl:
+      'https://images.pexels.com/photos/10913620/pexels-photo-10913620.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+    alt: 'Curtain Rod 1',
+  },
+  {
+    id: 8,
+    imageUrl:
+      'https://images.pexels.com/photos/10913620/pexels-photo-10913620.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+    alt: 'Curtain Rod 1',
+  },
+  {
+    id: 9,
+    imageUrl:
+      'https://images.pexels.com/photos/10913620/pexels-photo-10913620.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+    alt: 'Curtain Rod 1',
+  },
+  {
+    id: 10,
+    imageUrl:
+      'https://images.pexels.com/photos/10913620/pexels-photo-10913620.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+    alt: 'Curtain Rod 1',
+  },
+];
+---
+
+<Layout
+  description="Explore our wide range of bathroom accessories."
+  title="Bathroom Accessories · Home"
+>
+  <div class="max-w-10xl mx-auto px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+    <div>
+      <h1 class="mb-8 text-6xl font-bold">Curtain Rods</h1>
+    </div>
+    <div class="grid grid-cols-2 gap-8 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+      {
+        curtainRods.map((accessory) => (
+          <div class="bg-gray-200 overflow-hidden rounded-lg shadow-md">
+            <img
+              src={accessory.imageUrl}
+              alt={accessory.alt}
+              class="sm:h-120 md:h-150 lg:h-200 xl:h-250 h-96 w-full object-cover"
+            />
+            <div class="p-4">
+              <p class="text-sm">{accessory.alt}</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</Layout>
