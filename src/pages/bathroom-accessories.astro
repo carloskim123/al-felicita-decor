@@ -19,16 +19,24 @@ const bathroomAccessories = [
   description="Explore our wide range of bathroom accessories."
   title="Bathroom Accessories · Home"
 >
-  <div class="mx-auto max-w-10xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+  <div class="max-w-10xl mx-auto px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
     <div>
-      <h1 class="text-6xl font-bold mb-8">Bathroom Accessories</h1>
+      <h1 class="mb-8 text-6xl font-bold">Metal Decors</h1>
     </div>
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
-      {bathroomAccessories.map(accessory => (
-        <div class="bg-gray-200 rounded-lg overflow-hidden shadow-md">
-          <img src={accessory.imageUrl} alt={accessory.alt} class="object-cover w-full h-96 sm:h-120 md:h-150 lg:h-200 xl:h-250">
-          <div class="p-4">
-            <p class="text-sm">{accessory.alt}</p>
+    <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      {bathroomAccessories.map((accessory) => (
+        <div
+          class="bg-gray-200 overflow-hidden rounded-lg shadow-md flex flex-col justify-between"
+        >
+          <div>
+            <img
+              src={accessory.imageUrl}
+              alt={accessory.alt}
+              class="sm:h-80 md:h-96 lg:h-120 w-full object-cover"
+            />
+            <div class="p-4">
+              <p class="text-sm truncate">{accessory.alt}</p>
+            </div>
           </div>
         </div>
       ))}

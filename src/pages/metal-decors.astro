@@ -72,21 +72,25 @@ const metalDecors = [
     <div>
       <h1 class="mb-8 text-6xl font-bold">Metal Decors</h1>
     </div>
-    <div class="grid grid-cols-2 gap-8 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-      {
-        metalDecors.map((accessory) => (
-          <div class="bg-gray-200 overflow-hidden rounded-lg shadow-md">
+    <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      {metalDecors.map((accessory) => (
+        <div
+          class="bg-gray-200 overflow-hidden rounded-lg shadow-md flex flex-col justify-between"
+        >
+          <div>
             <img
               src={accessory.imageUrl}
               alt={accessory.alt}
-              class="sm:h-120 md:h-150 lg:h-200 xl:h-250 h-96 w-full object-cover"
+              class="sm:h-80 md:h-96 lg:h-120 w-full object-cover"
             />
             <div class="p-4">
-              <p class="text-sm">{accessory.alt}</p>
+              <p class="text-sm truncate">{accessory.alt}</p>
             </div>
           </div>
-        ))
-      }
+        </div>
+      ))}
     </div>
   </div>
 </Layout>
+
+
