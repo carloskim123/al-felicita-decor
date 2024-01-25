@@ -1,16 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
 const bathroomAccessories = [
-  { id: 1, imageUrl: 'https://images.pexels.com/photos/10913620/pexels-photo-10913620.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load', alt: 'Bathroom Accessory 1' },
-  { id: 2, imageUrl: 'https://images.pexels.com/photos/10913620/pexels-photo-10913620.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load', alt: 'Bathroom Accessory 2' },
-  { id: 3, imageUrl: 'https://images.pexels.com/photos/12607180/pexels-photo-12607180.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load', alt: 'Bathroom Accessory 3' },
-  { id: 4, imageUrl: 'https://images.pexels.com/photos/10913620/pexels-photo-10913620.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load', alt: 'Bathroom Accessory 1' },
-  { id: 5, imageUrl: 'https://images.pexels.com/photos/10913620/pexels-photo-10913620.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load', alt: 'Bathroom Accessory 1' },
-  { id: 6, imageUrl: 'https://images.pexels.com/photos/10913620/pexels-photo-10913620.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load', alt: 'Bathroom Accessory 1' },
-  { id: 7, imageUrl: 'https://images.pexels.com/photos/10913620/pexels-photo-10913620.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load', alt: 'Bathroom Accessory 1' },
-  { id: 8, imageUrl: 'https://images.pexels.com/photos/10913620/pexels-photo-10913620.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load', alt: 'Bathroom Accessory 1' },
-  { id: 9, imageUrl: 'https://images.pexels.com/photos/10913620/pexels-photo-10913620.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load', alt: 'Bathroom Accessory 1' },
-  { id: 10, imageUrl: 'https://images.pexels.com/photos/10913620/pexels-photo-10913620.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load', alt: 'Bathroom Accessory 1' },
+  { id: 1, imageUrl: 'https://lh3.googleusercontent.com/7YOa6aicfLEF44ynKwGiJiCJu22_1cY1J8POFtogRyD3EVJBpsJ2PVwRSKOds-WIJfIYqb3I_TsMHAUpKRjd_64XIl88IR8ubw9koK060H_m2CiaBdCzTki8c15JdWQmEg=w1280', alt: 'Bathroom Accessory 1' },
+  { id: 2, imageUrl: 'https://lh3.googleusercontent.com/2AXZOTfcEZXbRnYmQb3qdH9cm2wrezQSsXVVWizh1o4enbPjcwpVAU3M2ih5ZiMqj7CSb4LJBN_DJw5ZQIOmrtk=w1280', alt: 'Bathroom Accessory 2' },
+  { id: 3, imageUrl: 'https://lh5.googleusercontent.com/5m5tKoyNPir2kKqXe-jhIyhFzH0gjibVl7GhXLaDlMpY7faDbjT5qZB9ktqu-RHUdxTELilUaAuU9CoMFRadvzYEldtSzVMoPLdvkcY3NNdcVBcF5iifJ_F1zWaT7LtcKw=w1280', alt: 'Bathroom Accessory 3' },
+  { id: 4, imageUrl: 'https://lh6.googleusercontent.com/3ZN1TLHJjBI2hDGWyj-ITnBWCsgn_4FSIq2Dp9TmLA8wVTUXFifU0oUXCyegyfcMxkinLWdWweYSfD3yJaMSvYoIjZK9LmGLF7FeTk-rnjCmRe9_SFp5syknOVjE1--0=w1280', alt: 'Bathroom Accessory 1' },
+  { id: 5, imageUrl: 'https://lh5.googleusercontent.com/RBRkYyG-al7MLcst7xLSMdhC_ZwLsm1bQ0xsMItNU4CKnjlcSD9PWmpPboky18ixm258jOndR6Ms8jHDt7_P4t3GBHiSyb-_wJjnFv7qBo9HZZmW3fyRz8xtUI8UQYzCFw=w1280', alt: 'Bathroom Accessory 1' },
+  { id: 6, imageUrl: 'https://lh5.googleusercontent.com/hxQOGvs47iOK52EgGTtiFzAoRPZz1kBLtxYXdtpS71G8Yc9hTOi45o2chE5VvehoUsFDTJe1AuPy68KOwoVNElf--tv9Hs9917OlvV0K7kOXTIU952mW-Nxinfc6lQ29ew=w1280', alt: 'Bathroom Accessory 1' },
+  { id: 7, imageUrl: 'https://lh3.googleusercontent.com/55MhmwLegBwuUlWXFPoVbyiPw9Dyfd-U3mTbBaHKmpLBvb1rQaVOdcnF2mclvKu9S_RTfOJJhonbnMjmiJK1xNU=w1280', alt: 'Bathroom Accessory 1' },
+  { id: 8, imageUrl: 'https://lh3.googleusercontent.com/RN7SVDMydU5_Qhq8VER3GKyeZ12LacsijpNLXAcKoaS50CuAqI8fhB9Bc8PxR3GKiU2b3jS-hknx89ks-Ky3RdChjsa-OgIlfVyW2DmVF-3moI2tNhxkLWcXjzPkGa0YCg=w1280', alt: 'Bathroom Accessory 1' },
+  { id: 9, imageUrl: 'https://lh6.googleusercontent.com/684z7yMghV24k_tgyLqy7Byiq7aI6F44YdTGUfvjhFORiBeXUZJQOAm5rHz0pXY2ciqH0BPFxw2EGKVojJVnI18=w1280', alt: 'Bathroom Accessory 1' },
+  { id: 10, imageUrl: 'https://lh3.googleusercontent.com/qVqjakB_f9SHIH8hgyNz5meu6oChvtfFX795ta0Bl8r_I_0sDb04XjjTlnTJuQtYaOWWzfgqaeDv6fz1hsuKkk4=w1280', alt: 'Bathroom Accessory 1' },
+  { id: 11, imageUrl: 'https://lh6.googleusercontent.com/Ef0W9ZezMuqH7OtSn5Lybs842AO1iuccY0mBc_LOpk89_1UBLw9f6qONy8t1j347LnbWk1nJ9ZQF_uPs6SP4MX8=w1280', alt: 'Bathroom Accessory 1' },
+  { id: 12, imageUrl: 'https://lh6.googleusercontent.com/gMU8Qb8oQyEGA48IIuIvSSzn7_1Uy3p6OG6hT9ZbNAtEok5CFlAG5XOhgQCeZGQB022pxVImjvm53kBpUMYBINTGf6RDF3hRXod6Y-K5MKQccqeS43w1MyZIgjukvGqWNg=w1280', alt: 'Bathroom Accessory 1' },
 
 ];
 ---
@@ -21,7 +23,7 @@ const bathroomAccessories = [
 >
   <div class="max-w-10xl mx-auto px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
     <div>
-      <h1 class="mb-8 text-6xl font-bold">Metal Decors</h1>
+      <h1 class="mb-8 text-6xl font-bold">Bathroom Decors</h1>
     </div>
     <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       {bathroomAccessories.map((accessory) => (
