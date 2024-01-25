@@ -4,7 +4,7 @@ const bottomLinks = [
     header: 'Social',
     links: [
       {
-        name: 'Twitter',
+        name: 'X',
         href: 'https://twitter.com/',
         isExternal: true,
       },
@@ -15,7 +15,7 @@ const bottomLinks = [
       },
       {
         name: 'Facebook',
-        href: 'https://facebook.com/',
+        href: 'https://www.facebook.com/people/Al-Felicita-Decor-shop/61553301389205/?mibextid=ZbWKwL',
         isExternal: true,
       },
     ],
@@ -71,6 +71,8 @@ const bottomLinks = [
     ],
   },
 ];
+
+const date = new Date();
 ---
 
 <footer
@@ -86,7 +88,7 @@ const bottomLinks = [
           At Al-Felicita, we believe that your home is a canvas where memories are painted, and
           every brushstroke should reflect your unique style.
         </p>
-        <p class="text-sm text-primary-950/70 dark:text-primary-200/70">© 2023 Al-Felicita</p>
+        <p class="text-sm text-primary-950/70 dark:text-primary-200/70">© {date.getFullYear()} Al-Felicita</p>
       </div>
 
       <!-- Bottom links -->
